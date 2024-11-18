@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "b18c1ebd-1ec1-4b8f-b05e-9526dfa01483",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "39710444-b18c1ebd-1ec1-4b8f-b05e-9526dfa01483"
+	},
+	"item": [
+		{
+			"name": "True",
+			"id": "c151aba6-1ede-40eb-9609-0344825d2d63",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// Mock response for available ingredients\r\n{\r\n  \"availability\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://58fe0c82-1a50-4fd8-9c9a-07b85c608df6.mock.pstmn.io/api/Inventory/check-availability",
+					"protocol": "https",
+					"host": [
+						"58fe0c82-1a50-4fd8-9c9a-07b85c608df6",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"api",
+						"Inventory",
+						"check-availability"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "900f5098-24c4-4d8a-8123-7b0d4dd909d8",
+					"name": "true",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// Mock response for available ingredients\r\n{\r\n  \"availability\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7268/api/Inventory/check-availability",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7268",
+							"path": [
+								"api",
+								"Inventory",
+								"check-availability"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"uuid": "6a3fe458-421d-41da-a02d-34251acc373f"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "False",
+			"id": "2218e421-1471-4439-b2c6-490c11e0fad3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// Mock response for available ingredients\r\n{\r\n  \"availability\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://58fe0c82-1a50-4fd8-9c9a-07b85c608df6.mock.pstmn.io/api/Inventory/check-availability",
+					"protocol": "https",
+					"host": [
+						"58fe0c82-1a50-4fd8-9c9a-07b85c608df6",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"api",
+						"Inventory",
+						"check-availability"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "32b56b97-7caa-4636-8db3-bb2d1b5a22e8",
+					"name": "False",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// Mock response for available ingredients\r\n{\r\n  \"availability\": false\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7268/api/Inventory/check-availability",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7268",
+							"path": [
+								"api",
+								"Inventory",
+								"check-availability"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "CreateBreakfast",
+			"id": "1db08020-35a5-4bb6-927f-af73b2ee092f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://58fe0c82-1a50-4fd8-9c9a-07b85c608df6.mock.pstmn.io/api/Breakfast",
+					"protocol": "https",
+					"host": [
+						"58fe0c82-1a50-4fd8-9c9a-07b85c608df6",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"api",
+						"Breakfast"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e32d3e20-d109-4e67-aaeb-f960dd375fe2",
+					"name": "CreateBreakfast",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"bId\": 1,\r\n        \"ingredients\": [\r\n            {\r\n                \"name\": \"bread\",\r\n                \"quantity\": 1\r\n            },\r\n            {\r\n                \"name\": \"cheese\",\r\n                \"quantity\": 1\r\n            }\r\n        ]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5002/api/Breakfast",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"api",
+								"Breakfast"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
