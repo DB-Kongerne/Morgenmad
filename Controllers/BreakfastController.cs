@@ -12,14 +12,14 @@ namespace BreakFastAPI.Controllers
     public class BreakfastController : ControllerBase
     {
         private readonly IBreakfastRepository _breakfastRepository;
-        public BreakfastController(IBreakfastRepository breakfastRepository )
+        public BreakfastController(IBreakfastRepository breakfastRepository)
         {
-            _breakfastRepository = breakfastRepository;          
-        }      
+            _breakfastRepository = breakfastRepository;
+        }
         [HttpPost]
         public async Task<IActionResult> CreateBreakfast([FromBody] List<Ingredient> ingredients)
         {
-            var  _httpClient= new HttpClient();
+            var _httpClient = new HttpClient();
 
             // sending a POST request to the inventory Web API that is not implemented yet
             var response = await _httpClient.PostAsJsonAsync("https://localhost:7268/api/Inventory/check-availability", ingredients);
@@ -31,7 +31,7 @@ namespace BreakFastAPI.Controllers
 
             var availability = await response.Content.ReadFromJsonAsync<bool>();
 
-            if(availability)
+            if (availability)
             {
                 // create the breakfast
                 var breakfast = new BreakfastRequest()
@@ -46,6 +46,12 @@ namespace BreakFastAPI.Controllers
             }
             return BadRequest(new { Message = "Not enough ingredients to create breakfast." });
 
+        }
+        // Get all breakfasts
+        [HttpGet]
+        public IEnumerable<BreakfastRequest> GetAllBreakfasts()
+        {
+            return _breakfastRepository.GetAllBreakfasts();
         }
     }
 }
