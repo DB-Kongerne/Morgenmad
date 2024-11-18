@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BreakFastAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17e9550da64fa12377e7e7f87c063cbaa5b09ea8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc672bf543b5ed6bfd1ac1f0ac828ea488ff5002")]
 [assembly: System.Reflection.AssemblyProductAttribute("BreakFastAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BreakFastAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
