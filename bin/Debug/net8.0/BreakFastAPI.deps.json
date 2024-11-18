@@ -64,10 +64,7 @@
       },
       "BreakfastClassLibrary/1.0.0": {
         "runtime": {
-          "BreakfastClassLibrary.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BreakfastClassLibrary.dll": {}
         }
       }
     }
