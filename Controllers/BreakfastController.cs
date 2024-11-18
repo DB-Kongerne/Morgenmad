@@ -47,11 +47,5 @@ namespace BreakFastAPI.Controllers
             return BadRequest(new { Message = "Not enough ingredients to create breakfast." });
 
         }
-        // Get all breakfasts
-        [HttpGet]
-        public IEnumerable<BreakfastRequest> GetAllBreakfasts()
-        {
-            return _breakfastRepository.GetAllBreakfasts();
-        }
     }
 }
